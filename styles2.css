@@ -1,0 +1,217 @@
+:root {
+  --oren: #ff9f00;
+  --tosca: #72dad2;
+  --kuning: rgba(225, 255, 38, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ideZul {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: transparent;
+  z-index: 99;
+}
+body {
+  background-color: #fffbf4;
+  overflow: hidden;
+}
+.oren {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: var(--oren);
+  display: inline;
+  position: absolute;
+}
+.tosca {
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  color: var(--tosca);
+  display: inline;
+  position: absolute;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.satu {
+  font-size: 10em;
+  bottom: 100px;
+  left: -15px;
+  opacity: 0.3;
+}
+.dua {
+  font-size: 20em;
+  top: -100px;
+  left: 200px;
+  opacity: 0.4;
+}
+.tiga {
+  font-size: 5em;
+  top: 120px;
+  left: 327px;
+  opacity: 1;
+}
+.empat {
+  font-size: 5em;
+  bottom: 120px;
+  left: 700px;
+}
+.lima {
+  font-size: 35em;
+  bottom: -320px;
+  right: -30px;
+  opacity: 0.4;
+}
+.enam {
+  font-size: 8em;
+  top: 20px;
+  right: -30px;
+  opacity: 0.6;
+}
+.tujuh {
+  font-size: 5em;
+  top: 20px;
+  right: 450px;
+  opacity: 1;
+}
+.delapan {
+  font-size: 12em;
+  top: 160px;
+  right: 750px;
+  opacity: 0.3;
+}
+.sembilan {
+  font-size: 8em;
+  bottom: 240px;
+  right: 200px;
+  opacity: 1;
+}
+.sepuluh {
+  font-size: 6em;
+  bottom: 20px;
+  right: 14 0px;
+  opacity: 1;
+}
+.heroImage {
+  position: absolute;
+  width: 630px;
+  bottom: 0px;
+  left: 100px;
+  z-index: 999;
+}
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+  position: absolute;
+  top: 130px;
+  right: 100px;
+  z-index: 9999;
+  /* background-color: blue; */
+}
+.heroText {
+  font-size: 5rem;
+  /* background-color: red; */
+  color: var(--oren);
+  display: inline;
+}
+.input {
+  margin-top: 25px;
+  background-color: var(--kuning);
+  padding: 0.3em 1em;
+  border-radius: 0.9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.icon {
+  width: 18px;
+}
+.search {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(38, 38, 38, 0.6);
+  padding-left: 1em;
+  border: none;
+  /* margin-top: 10px; */
+  outline: none;
+  height: 40px;
+  border-radius: 15px;
+  /* background-color: var(--kuning); */
+  background-color: transparent;
+  width: 100%;
+}
+.search::placeholder {
+  color: rgba(38, 38, 38, 0.6);
+}
+.heroDesc {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.start {
+  width: 130px;
+  outline: none;
+  background-color: var(--oren);
+  border: none;
+  padding: 1em 0.8em;
+  border-radius: 1.8em;
+  font-weight: bold;
+  margin-top: 2.5em;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+.start:hover {
+  transform: scale(0.95);
+  transition: 0.3s ease;
+}
+
+/* h1 {
+  color:#c00;
+  font-family:sans-serif;
+  font-size:2em;
+  margin-bottom:0;
+} */
+
+table {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--tosca);
+  /* padding: 0.25em; */
+  width: 80%;
+  border-radius: 10px 10px 0 0;
+  border-spacing: 0.4em 0.3em;
+  align-self: center;
+  margin-top: 2em;
+  /* gap: 10px; */
+}
+th,
+td {
+  padding: 0.5em;
+  text-align: center;
+}
+td {
+  background-color: #fff;
+  /* gap: 5pxss; */
+}
+th {
+  /* background-color: #009; */
+  color: black;
+}
+/* .zigzag {
+  border-collapse: separate;
+  border-spacing: 0.25em 1em;
+  tbody tr:nth-child(odd) {
+    transform: rotate(2deg);
+  }
+  thead tr,
+  tbody tr:nth-child(even) {
+    transform: rotate(-2deg);
+  }
+} */
