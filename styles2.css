@@ -1,3 +1,4 @@
+@import "./animation.css";
 :root {
   --oren: #ff9f00;
   --tosca: #72dad2;
@@ -28,6 +29,8 @@ body {
   bottom: 0px;
   left: 100px;
   z-index: 999;
+  animation: pop-slide-up 2s cubic-bezier(0, 0.67, 0.2, 1.05) forwards,
+    atas-bawah-2 6s 2s linear infinite;
 }
 .heroContent {
   display: flex;
@@ -37,6 +40,8 @@ body {
   top: 130px;
   right: 100px;
   z-index: 9999;
+  /* animation: pop-scale-up 0.1s cubic-bezier(0, 0.67, 0.2, 1.05) forwards;
+  animation-iteration-count: 1; */
   /* background-color: blue; */
 }
 .heroText {
@@ -163,6 +168,10 @@ td {
   position: sticky;
   top: 0;
 }
+.hidden {
+  display: none;
+}
+
 /* hide scrollbar but allow scrolling */
 ::-webkit-scrollbar {
   width: 0 !important;
@@ -189,40 +198,49 @@ a {
   text-decoration: none;
   color: black;
 }
+
 .satu {
   font-size: 10em;
   bottom: 100px;
   left: -15px;
   opacity: 0.3;
+  /* background-color: red; */
+  animation: atas-bawah 40s ease infinite;
 }
 .dua {
   font-size: 20em;
   top: -100px;
   left: 200px;
   opacity: 0.4;
+  animation: kanan-kiri 6s ease infinite;
+  /* background-color: red; */
 }
 .tiga {
   font-size: 5em;
   top: 120px;
   left: 327px;
   opacity: 1;
+  animation: kanan-kiri-2 6s ease infinite;
 }
 .empat {
   font-size: 5em;
   bottom: 120px;
   left: 700px;
+  animation: kanan-kiri 20s linear infinite;
 }
 .lima {
   font-size: 35em;
   bottom: -320px;
   right: -30px;
   opacity: 0.4;
+  animation: zoom-in 20s linear infinite;
 }
 .enam {
   font-size: 8em;
   top: 20px;
   right: -30px;
   opacity: 0.6;
+  animation: square 30s ease infinite;
 }
 .tujuh {
   font-size: 5em;
@@ -235,12 +253,14 @@ a {
   top: 160px;
   right: 750px;
   opacity: 0.3;
+  animation: gemerlap 10s ease infinite;
 }
 .sembilan {
   font-size: 8em;
-  bottom: 240px;
-  right: 200px;
+  bottom: 200px;
+  right: 350px;
   opacity: 1;
+  animation: gemerlap 6s ease infinite;
 }
 .sepuluh {
   font-size: 6em;

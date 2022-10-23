@@ -1,3 +1,4 @@
+@import "animation.css";
 :root {
   --oren: #ff9f00;
   --tosca: #00c7c7;
@@ -74,6 +75,7 @@ a {
   bottom: 0;
   right: 160px;
   z-index: 999;
+  animation: atas-bawah-2 6s ease-in infinite;
 }
 .heroContent {
   display: flex;
