@@ -1,6 +1,7 @@
 @import "./animation.css";
 :root {
   --oren: #ff9f00;
+  --orentua: #e68f05;
   --tosca: #72dad2;
   --kuning: rgba(225, 255, 38, 0.4);
 }
@@ -127,24 +128,19 @@ body {
   transform: scale(0.95);
   transition: 0.3s ease;
 }
-
-/* h1 {
-  color:#c00;
-  font-family:sans-serif;
-  font-size:2em;
-  margin-bottom:0;
-} */
-
 table {
   font-family: "Poppins", sans-serif;
-  background-color: var(--tosca);
+  background-color: var(--orentua);
   /* padding: 0.25em; */
   border-spacing: 0.4em 0.3em;
   width: 100%;
+  /* color: white; */
   /* border-collapse: collapse; */
 }
 th {
-  background-color: var(--tosca);
+  background-color: var(--orentua);
+  color: white;
+  letter-spacing: 1px;
 }
 th,
 td {
