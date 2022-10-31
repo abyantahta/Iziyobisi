@@ -13,49 +13,11 @@
       <h1 class="heroText">Find Your Medicine</h1>
       <form class="form" action="/recommendation" method="POST">
         <div class="input">
-          <div class="container">
-            <select class="daerah" id="daerah">
-              <option value="">Location</option>
-              <option value="Aceh">Aceh</option>
-              <option value="Bali">Bali</option>
-              <option value="Banten">Banten</option>
-              <option value="Bengkulu">Bengkulu</option>
-              <option value="Special Region of Yogyakarta">DIY</option>
-              <option value="Special Capital Region of Jakarta">
-                DKI Jakarta
-              </option>
-              <option value="Gorontalo">Gorontalo</option>
-              <option value="Jambi">Jambi</option>
-              <option value="West Java">Jawa Barat</option>
-              <option value="Central Java">Jawa Tengah</option>
-              <option value="East Java">Jawa Timur</option>
-              <option value="West Kalimantan">Kalimatan Barat</option>
-              <option value="South Kalimantan">Kalimantan Selatan</option>
-              <option value="Central Kalimantan">Kalimantan Tengah</option>
-              <option value="East Kalimantan">Kalimantan Timur</option>
-              <option value="North Kalimantan">Kalimantan Utara</option>
-              <option value="Bangka Belitung Island">
-                Kep. Bangka Belitung
-              </option>
-              <option value="Riau Island">Kep. Riau</option>
-              <option value="Lampung">Lampung</option>
-              <option value="Maluku">Maluku</option>
-              <option value="North Maluku">Maluku Utara</option>
-              <option value="West Nusa Tenggara">NTB</option>
-              <option value="East Nusa Tenggara">NTT</option>
-              <option value="Papua">Papua</option>
-              <option value="West Papua">Papua Barat</option>
-              <option value="Riau">Riau</option>
-              <option value="West Sulawesi">Sulawesi Barat</option>
-              <option value="South Sulawesi">Sulawesi Selatan</option>
-              <option value="Central Sulawesi">Sulawesi Tengah</option>
-              <option value="South East Sulawesi">Sulawesi Tenggara</option>
-              <option value="North Sulawesi">Sulawesi Utara</option>
-              <option value="West Sumatera">Sumatera Barat</option>
-              <option value="South Sumatera">Sumatera Selatan</option>
-              <option value="North Sumatera">Sumatera Utara</option>
-            </select>
-          </div>
+          <img
+            class="icon"
+            src="{{url_for('static', filename='searchIcon.png')}}"
+            alt=""
+          />
           <input
             type="text"
             class="search"
@@ -63,13 +25,7 @@
             name="penyakit"
             placeholder="Enter Disease Name"
           />
-          <div class="icon">
-            <img
-              class=""
-              src="{{url_for('static', filename='searchIcon.png')}}"
-              alt=""
-            />
-          </div>
+          <button class="submit">FIND</button>
         </div>
       </form>
       {% if ob %}
