@@ -3,6 +3,8 @@
   --oren: #ff9f00;
   --tosca: #00c7c7;
   --kuning: #e1ff26;
+  --ijo: #00c7c7;
+  --ijotua: #007b70;
 }
 
 * {
@@ -18,13 +20,13 @@
   z-index: 99;
 }
 body {
-  background-color: #fffbf4;
+  background-color: #f7fdfe;
   overflow: hidden;
 }
 .oren {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
-  color: var(--oren);
+  color: var(--ijo);
   display: inline;
   position: absolute;
 }
@@ -88,7 +90,7 @@ a {
 }
 .heroText {
   font-size: 7rem;
-  color: var(--oren);
+  color: var(--ijotua);
 }
 .heroDesc {
   font-family: "Poppins", sans-serif;
@@ -98,7 +100,7 @@ a {
 .start {
   width: 130px;
   outline: none;
-  background-color: var(--oren);
+  background-color: var(--ijotua);
   border: none;
   padding: 1em 0.8em;
   border-radius: 1.8em;
@@ -107,6 +109,7 @@ a {
   cursor: pointer;
   transition: 0.3s ease;
   font-size: 1rem;
+  color: white;
 }
 .start:hover {
   transform: scale(0.95);
